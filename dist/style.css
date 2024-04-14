@@ -35317,6 +35317,8 @@ label img {
   transform: scale(1) translateY(86px);
   font-size: 20px;
   font-weight: 600;
+  color :white;
+ text-shadow:  black 3px 4px 11px;
   /* margin-top: 102px; */
   /* z-index: 50;
 }

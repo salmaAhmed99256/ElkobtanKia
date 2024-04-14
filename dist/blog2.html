@@ -1145,7 +1145,7 @@
                                                       </div>
                                                     </div>
                                                     <div
-                                                      class="options-container"
+                                                      class="options-container Seater"
                                                     >
                                                       <div
                                                         class="trim-filter-option"
@@ -1159,6 +1159,10 @@
                                                         />
                                                         <label
                                                           class="label-radio btn trim-filter-option-label"
+                                                          style="
+                                                            align-items: center;
+                                                            display: grid;
+                                                          "
                                                           for="filterItem_0_KP-9"
                                                         >
                                                           9 seats
@@ -1177,6 +1181,10 @@
                                                         />
                                                         <label
                                                           class="label-radio btn trim-filter-option-label"
+                                                          style="
+                                                            display: grid;
+                                                            align-items: center;
+                                                          "
                                                           for="filterItem_0_KP-7"
                                                         >
                                                           7 seats
@@ -1195,7 +1203,7 @@
                                                       </div>
                                                     </div>
                                                     <div
-                                                      class="options-container"
+                                                      class="options-container Engine"
                                                     >
                                                       <div
                                                         class="trim-filter-option"
@@ -1208,6 +1216,10 @@
                                                           value="KP-A"
                                                         /><label
                                                           class="label-radio btn trim-filter-option-label"
+                                                          style="
+                                                            display: grid;
+                                                            align-items: center;
+                                                          "
                                                           for="filterItem_1_KP-A"
                                                           >3.5 gasoline</label
                                                         >
@@ -1224,23 +1236,12 @@
                                                           checked
                                                         /><label
                                                           class="label-radio btn trim-filter-option-label"
+                                                          style="
+                                                            display: grid;
+                                                            align-items: center;
+                                                          "
                                                           for="filterItem_1_KP-1"
                                                           >2.2 diesel</label
-                                                        >
-                                                      </div>
-                                                      <div
-                                                        class="trim-filter-option"
-                                                      >
-                                                        <input
-                                                          type="radio"
-                                                          class="btn-check"
-                                                          id="filterItem_1_KP-9"
-                                                          name="filter_1_06"
-                                                          value="KP-9"
-                                                        /><label
-                                                          class="label-radio btn trim-filter-option-label"
-                                                          for="filterItem_1_KP-9"
-                                                          >1.6 Hybrid</label
                                                         >
                                                       </div>
                                                     </div>
@@ -3926,7 +3927,13 @@
                                                 <div
                                                   class="col-12 build-option-container trims-container"
                                                 >
-                                                  <ul style="padding: 0">
+                                                  <ul
+                                                    style="
+                                                      padding: 0;
+                                                      display: grid;
+                                                      gap: 1rem;
+                                                    "
+                                                  >
                                                     <li class="add-price">
                                                       <input
                                                         class="form-check-input"
@@ -4468,6 +4475,224 @@
                                               </h4>
                                             </div>
                                           </div>
+                                          <div class="row copy-build-container">
+                                            <div class="col">
+                                              <div
+                                                class="col-12 build-option-container trims-container"
+                                              >
+                                                <ul
+                                                  style="
+                                                    padding: 0;
+                                                    display: grid;
+                                                    gap: 1rem;
+                                                  "
+                                                >
+                                                  <li class="add-priceAcc">
+                                                    <input
+                                                      class="form-check-input"
+                                                      type="checkbox"
+                                                      value="1216"
+                                                      name="testCat"
+                                                      id="cb15"
+                                                      onchange="updatePrice(this)"
+                                                    />
+                                                    <label
+                                                      class="trim-filter-label"
+                                                      for="cb15"
+                                                    >
+                                                      <div
+                                                        class="flex justifyContent-spaceAround"
+                                                        style="gap: 1rem"
+                                                      >
+                                                        <img
+                                                          src="./assets/img/photos/a2.jpg"
+                                                        />
+                                                        <div class="grid">
+                                                          <div
+                                                            class="options_name"
+                                                          >
+                                                            <strong
+                                                              >Smartstream
+                                                              D2.2Engine</strong
+                                                            >
+                                                            <div
+                                                              class="tag_top _topnull"
+                                                            >
+                                                              <span
+                                                                class="ir-text"
+                                                                >Top</span
+                                                              >
+                                                            </div>
+                                                            <i
+                                                              class="uil uil-check hidden-icon"
+                                                            ></i>
+                                                          </div>
+
+                                                          <div class="price">
+                                                            52,63
+                                                            <span class="unit"
+                                                              >EGP</span
+                                                            >
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                  </li>
+                                                  <li class="add-priceAcc">
+                                                    <input
+                                                      class="form-check-input"
+                                                      type="checkbox"
+                                                      id="cb17"
+                                                      name="testCat"
+                                                      value="1232"
+                                                      onchange="updatePrice(this)"
+                                                    />
+                                                    <label
+                                                      class="trim-filter-label"
+                                                      for="cb17"
+                                                    >
+                                                      <div
+                                                        class="flex justifyContent-spaceAround"
+                                                        style="gap: 1rem"
+                                                      >
+                                                        <img
+                                                          src="./assets/img/photos/a2.jpg"
+                                                        />
+                                                        <div class="grid">
+                                                          <div
+                                                            class="options_name"
+                                                          >
+                                                            <strong
+                                                              >High-end
+                                                              ISG</strong
+                                                            >
+                                                            <div
+                                                              class="tag_top _topnull"
+                                                            >
+                                                              <span
+                                                                class="ir-text"
+                                                                >Top</span
+                                                              >
+                                                            </div>
+                                                            <i
+                                                              class="uil uil-check hidden-icon"
+                                                            ></i>
+                                                          </div>
+
+                                                          <div class="price">
+                                                            61,69
+                                                            <span class="unit"
+                                                              >EGP</span
+                                                            >
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                  </li>
+                                                  <li class="add-priceAcc">
+                                                    <input
+                                                      type="checkbox"
+                                                      id="cb18"
+                                                      class="form-check-input"
+                                                      name="testCat"
+                                                      value="1238"
+                                                      onchange="updatePrice(this)"
+                                                    />
+                                                    <label
+                                                      class="trim-filter-label"
+                                                      for="cb18"
+                                                    >
+                                                      <div
+                                                        class="flex justifyContent-spaceAround"
+                                                        style="gap: 1rem"
+                                                      >
+                                                        <img
+                                                          src="./assets/img/photos/a2.jpg"
+                                                        />
+                                                        <div class="grid">
+                                                          <div
+                                                            class="options_name"
+                                                          >
+                                                            <strong>VSM</strong>
+                                                            <div
+                                                              class="tag_top _topnull"
+                                                            >
+                                                              <span
+                                                                class="ir-text"
+                                                                >Top</span
+                                                              >
+                                                            </div>
+                                                            <i
+                                                              class="uil uil-check hidden-icon"
+                                                            ></i>
+                                                          </div>
+
+                                                          <div class="price">
+                                                            250
+                                                            <span class="unit"
+                                                              >EGP</span
+                                                            >
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                  </li>
+                                                  <li class="add-priceAcc">
+                                                    <input
+                                                      type="checkbox"
+                                                      id="cb19"
+                                                      class="form-check-input"
+                                                      name="testCat"
+                                                      value="1238"
+                                                      onchange="updatePrice(this)"
+                                                    />
+                                                    <label
+                                                      class="trim-filter-label"
+                                                      for="cb19"
+                                                    >
+                                                      <div
+                                                        class="flex justifyContent-spaceAround"
+                                                        style="gap: 1rem"
+                                                      >
+                                                        <img
+                                                          src="./assets/img/photos/a2.jpg"
+                                                        />
+                                                        <div class="grid">
+                                                          <div
+                                                            class="options_name"
+                                                          >
+                                                            <strong
+                                                              >Front/Rear
+                                                              Parking Distance
+                                                              Warning</strong
+                                                            >
+                                                            <div
+                                                              class="tag_top _topnull"
+                                                            >
+                                                              <span
+                                                                class="ir-text"
+                                                                >Top</span
+                                                              >
+                                                            </div>
+                                                            <i
+                                                              class="uil uil-check hidden-icon"
+                                                            ></i>
+                                                          </div>
+
+                                                          <div class="price">
+                                                            750
+                                                            <span class="unit"
+                                                              >EGP</span
+                                                            >
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
@@ -4561,6 +4786,127 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
     <script>
+      // Define an array to store items in the cart
+
+      // window.onload = function () {
+      //   var selectedItems = getSelectedItems();
+      //   if (selectedItems.length > 0) {
+      //     console.log("Selected Items:", selectedItems);
+      //     // Push selected items into the cart
+      //     selectedItems.forEach(function (item) {
+      //       cart.push(item);
+      //     });
+      //     console.log("Cart:", cart);
+      //   } else {
+      //     console.log("No items selected.");
+      //   }
+      // };
+
+      function getSelectedItems() {
+        var selectedItems = [];
+
+        // Find all checked radio buttons within elements with the class 'replace-price'
+        var checkedRadios = document.querySelectorAll(
+          '.replace-price input[type="radio"]:checked'
+        );
+        checkedRadios.forEach(function (checkedRadio) {
+          // Extract the details of the selected item
+          var trimName = checkedRadio.nextElementSibling
+            .querySelector(".options_name strong")
+            .textContent.trim();
+          var priceElement =
+            checkedRadio.nextElementSibling.querySelector(".price");
+          var priceText = priceElement.textContent.trim();
+          var price = parseFloat(priceText.replace(/[^\d.]/g, ""));
+          var item = {
+            category: "Trim",
+            Name: trimName,
+            price: price,
+          };
+          selectedItems.push(item);
+        });
+
+        // Find all checked radio buttons within elements with the class 'add-price'
+        var checkedOptionRadios = document.querySelectorAll(
+          '.add-priceAcc input[type="checkbox"]:checked'
+        );
+        checkedOptionRadios.forEach(function (checkedRadio) {
+          var optionName = checkedRadio.nextElementSibling
+            .querySelector(".options_name strong")
+            .textContent.trim();
+          var priceElement =
+            checkedRadio.nextElementSibling.querySelector(".price");
+          var priceText = priceElement.textContent.trim();
+          var price = parseFloat(priceText.replace(/[^\d.]/g, ""));
+          var imageSrc = checkedRadio
+            .closest(".add-priceAcc")
+            .querySelector("img").src;
+          var item = {
+            category: "Accessories",
+            Name: optionName,
+            price: price,
+            imageSrc: imageSrc,
+          };
+          selectedItems.push(item);
+          console.log(selectedItems);
+        });
+        var checkedOptionRadios = document.querySelectorAll(
+          '.add-price input[type="radio"]:checked'
+        );
+        checkedOptionRadios.forEach(function (checkedRadio) {
+          var optionName = checkedRadio.nextElementSibling
+            .querySelector(".options_name strong")
+            .textContent.trim();
+          var priceElement =
+            checkedRadio.nextElementSibling.querySelector(".price");
+          var priceText = priceElement.textContent.trim();
+          var price = parseFloat(priceText.replace(/[^\d.]/g, ""));
+
+          var item = {
+            category: "Options",
+            Name: optionName,
+            price: price,
+          };
+          selectedItems.push(item);
+        });
+        // Find all checked radio buttons within elements with the class 'add-price'
+
+        // Find the checked radio button within elements with the class 'Engine'
+        var checkedEngineRadio = document.querySelector(
+          '.Engine input[type="radio"]:checked'
+        );
+        if (checkedEngineRadio) {
+          var engineName =
+            checkedEngineRadio.nextElementSibling.textContent.trim();
+          var enginePrice = parseFloat(checkedEngineRadio.value);
+
+          var engineItem = {
+            category: "Engine",
+            Name: engineName,
+            price: isNaN(enginePrice) ? 0 : enginePrice,
+          };
+          selectedItems.push(engineItem);
+        }
+
+        // Find the checked radio button within elements with the class 'Seater'
+        var checkedSeaterRadio = document.querySelector(
+          '.Seater input[type="radio"]:checked'
+        );
+        if (checkedSeaterRadio) {
+          var seaterName =
+            checkedSeaterRadio.nextElementSibling.textContent.trim();
+          var seaterPrice = parseFloat(checkedSeaterRadio.value);
+          var seaterItem = {
+            category: "Seater",
+            Name: seaterName,
+            price: isNaN(seaterPrice) ? 0 : seaterPrice,
+          };
+          selectedItems.push(seaterItem);
+        }
+        console.log(selectedItems);
+        return selectedItems;
+      }
+
       function updatePrice(selectedElement) {
         var price = parseFloat(
           selectedElement.parentElement
@@ -4581,17 +4927,39 @@
           );
           console.log("Active Price: " + activePrice);
 
-          // Add the price to the initial price
           var initialPriceElement = document.getElementById("initial-price");
-          //   var initialPrice = parseFloat(
-          //     initialPriceElement.textContent.trim().replace(/[^0-9.-]+/g, "")
-          //   );
-          //   console.log("Initial Price: " + initialPrice);
 
           var updatedPrice = price + activePrice;
           console.log("Updated Price: " + updatedPrice);
 
           // Display the updated price
+          initialPriceElement.textContent = updatedPrice.toLocaleString(
+            "en-US",
+            { minimumFractionDigits: 2 }
+          );
+        } else if (
+          selectedElement.parentElement.classList.contains("add-priceAcc")
+        ) {
+          // Retrieve the initial price element
+          var initialPriceElement = document.getElementById("initial-price");
+
+          // Extract the initial price value from the element's text content
+          var initialPriceText = initialPriceElement.textContent.trim();
+          var initialPrice = parseFloat(
+            initialPriceText.replace(/[^\d.]/g, "")
+          );
+
+          // Check if the selected element is checked
+          var isChecked = selectedElement.checked;
+
+          // If the element is checked, add its price to the total
+          // If it's unchecked, subtract its price from the total
+          var priceToAdd = isChecked ? price : -price;
+
+          // Calculate the updated price by adding the priceToAdd to the initial price
+          var updatedPrice = initialPrice + priceToAdd;
+
+          // Update the initial price element to display the updated price
           initialPriceElement.textContent = updatedPrice.toLocaleString(
             "en-US",
             { minimumFractionDigits: 2 }
@@ -4605,6 +4973,34 @@
             minimumFractionDigits: 2,
           });
         }
+
+        // Check if there is any checked item
+        var checkedItem = document.querySelector(".add-price input:checked");
+        var specificButton = document.getElementById("button-text"); // Replace "specific-button" with the actual ID of your button
+
+        // Toggle the disabled attribute of the specific button based on the presence of a checked item
+        if (!checkedItem) {
+          specificButton.disabled = true;
+        } else {
+          specificButton.disabled = false;
+        }
+        var selectedItems = [];
+        selectedItems = getSelectedItems();
+        if (selectedItems.length > 0) {
+          console.log("Selected Items:", selectedItems);
+          // Push selected items into the cart
+          var cart = [];
+          selectedItems.forEach(function (item) {
+            cart.push(item);
+          });
+          // Set the updated cart to local storage
+          localStorage.setItem("cartItems", JSON.stringify(cart));
+          console.log("Cart:", cart);
+        } else {
+          console.log("No items selected.");
+        }
+
+        // Save the updated cart items back to localStorage
       }
 
       function closeDialog(dialog) {
@@ -4734,6 +5130,19 @@
 
       function next() {
         if (activeButton < 4) {
+          if (activeButton == 2) {
+            var checkedItem = document.querySelector(
+              ".add-price input:checked"
+            );
+            var specificButton = document.getElementById("button-text"); // Replace "specific-button" with the actual ID of your button
+
+            // Toggle the disabled attribute of the specific button based on the presence of a checked item
+            if (!checkedItem) {
+              specificButton.disabled = true;
+            } else {
+              specificButton.disabled = false;
+            }
+          }
           // Assuming you have 3 steps, adjust this number accordingly
           document
             .getElementById("step-" + activeButton)
@@ -4769,6 +5178,8 @@
             document
               .getElementById("exterior_container")
               .classList.add("d-none");
+            updateButtonText();
+
             showPanorama();
           } else {
             document
@@ -4823,6 +5234,9 @@
             updateButtonText();
           }
         }
+        var specificButton = document.getElementById("button-text"); // Replace "specific-button" with the actual ID of your button
+        specificButton.disabled = false;
+
         if (activeButton == 3 || activeButton == 4) {
           document
             .getElementById("interior_container")
@@ -4844,21 +5258,21 @@
         switch (activeButton) {
           case 1:
             buttonText.innerText = "Select option";
-            buttonTextPrev.innerText = "PiecesSelection";
+            buttonTextPrev.innerText = "Pieces Selection";
             break;
           case 2:
-            buttonText.innerText = "Choose your accessories";
+            buttonText.innerText = "Select option";
             buttonTextPrev.innerText = "Pieces Selection";
 
             break;
           case 3:
-            buttonText.innerText = "Quotation complete";
-            buttonTextPrev.innerText = "Select option";
+            buttonText.innerText = "Choose your accessories";
+            buttonTextPrev.innerText = "Color  Selection";
 
             break;
           default:
             buttonText.innerText = "Select option";
-            buttonTextPrev.innerText = "PiecesSelection";
+            buttonTextPrev.innerText = "Pieces Selection";
         }
       }
 
@@ -4924,11 +5338,8 @@
             options_basic.style.display = "none";
           }
         });
-    </script>
-    <script>
-      // Get all radio buttons
+
       const radioButtons = document.querySelectorAll('input[name="test"]');
-      // Get the description element
       const descriptionElement = document.querySelector(
         ".row.copy-build-colour .desc"
       );
@@ -4959,8 +5370,7 @@
           }
         });
       });
-    </script>
-    <script>
+
       var viewer; // Declare the viewer variable globally
 
       function showPanorama(event) {
