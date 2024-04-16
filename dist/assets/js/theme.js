@@ -1,4 +1,4 @@
-'use strict';
+carColor'use strict';
 var theme = {
   /**
    * Theme's components/functions list

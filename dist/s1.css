@@ -969,12 +969,12 @@
 }
 
 .configuration .panel-option-item {
-  padding: 40px 34px 40px 3pc;
+  /* padding: 40px 34px 40px 3pc; */
 }
 
 @media screen and (max-width: 1024px) {
   .configuration .panel-option-item {
-    padding: 0 1pc 2pc;
+    padding: 0px 1pc 5pc
   }
 }
 
@@ -1070,7 +1070,7 @@
   background-color: #dadbdc;
   border: 0;
   height: 1px;
-  margin: 40px 0;
+  margin: 25px 0;
   width: 100%;
 }
 
@@ -2662,9 +2662,9 @@
   }
 
   .configuration #panel_menu .panel-menu-btns {
-    bottom: auto;
+    /* bottom: auto; */
     left: auto;
-    position: relative;
+    /* position: relative; */
   }
 }
 
@@ -3113,10 +3113,10 @@
 .configuration #menu_content_choose_trim .trim-filter-container,
 .configuration #offcanvas_filter_trims .trim-filter-container {
   background: #fff;
-  border: 1px solid #dadbdc;
+  /* border: 1px solid #dadbdc; */
   border-radius: 6px;
-  margin-top: 24px;
-  padding: 24px;
+  margin-top: 20px;
+  /* padding: 24px; */
 }
 
 @media screen and (max-width: 1024px) {
@@ -3296,7 +3296,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 72.136%;
+  /* width: 72.136%; */
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -3403,9 +3404,13 @@
   + .btn,
 .configuration #offcanvas_filter_trims .trim-filter-option .btn.active,
 .configuration #offcanvas_filter_trims .trim-filter-option .btn:active {
-  background-color: #05141f;
+  /* background-image: linear-gradient(90deg, #410000 10%, #ff0000 100%);
   border-color: #05141f;
+  color: #fff; */
+  background-color: #05141f7d;
+  box-shadow: 0px 15px 20px #0000004d;
   color: #fff;
+  transform: translateY(-7px);
 }
 
 @media screen and (max-width: 1024px) {
@@ -5064,6 +5069,8 @@
   margin-bottom: 1pc;
   position: relative;
   width: 100%;
+  border-radius: 24px;
+  transition :all 0.3s ease-in-out;
 }
 
 .configuration
@@ -5093,11 +5100,24 @@
   width: 40px;
 }
 
+.configuration .trims-container .trim_item:hover {
+  
+    display: block;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 29px -7px #848c91;
+    /* border-color: #976cff; */
+    transform: scale(0.95);
+  }
 .configuration .trims-container .form-check-input:checked + .trim-filter-label {
-  border: 1px solid #05141f;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+     /* border: 2px solid #ff0000; */
+    /* border-radius: 6px; */
+    /* -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+    /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
+    box-shadow: 0px 0px 17px -4px #7e7272;
+    /* border-color: #ea0029; */
+    color: #f7f5ff;
+    background-color: #00000070;
 }
 
 @media screen and (max-width: 1024px) {
@@ -5121,12 +5141,13 @@
 
 .configuration .trims-container .trim-filter-label {
   border: 1px solid #dadbdc;
-  border-radius: 6px;
+  border-radius: 24px;
   cursor: pointer;
   display: inline-block;
   height: 100%;
   padding: 15px 24px;
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .configuration .trims-container .trim-filter-label .options_name {
@@ -5152,7 +5173,7 @@
 }
 
 .configuration .trims-container .trim-filter-label .price {
-  color: #697278;
+  color: #be0000;
   display: block;
   font-family: Kia Signature Bold, Arial, sans-serif, Hevetica;
   font-size: 18px;
@@ -10100,7 +10121,7 @@ a.btn-primary {
 }
 
 .btn-secondary {
-  background-color: #fff;
+  background-color:  #9fa5a9;
   border: 1px solid #9fa5a9;
   color: #05141f;
   font-family: Kia Signature Bold, Arial, sans-serif, Hevetica;
