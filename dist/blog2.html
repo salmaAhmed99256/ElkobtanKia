@@ -750,7 +750,7 @@
                                                         class="wrapper !bg-[#ffffff]"
                                                       >
                                                         <div
-                                                          class="container py-[4.5rem] xl:!py-12 lg:!py-12 md:!py-12"
+                                                          class="py-[1.5rem]"
                                                         >
                                                           <div
                                                             class="itemgrid grid-view projects-masonry"
@@ -1588,7 +1588,7 @@
                                                         class="wrapper !bg-[#ffffff]"
                                                       >
                                                         <div
-                                                          class="container py-[4.5rem] xl:!py-12 lg:!py-12 md:!py-12"
+                                                          class="py-[1.5rem]"
                                                         >
                                                           <div
                                                             class="itemgrid grid-view projects-masonry"
@@ -2290,7 +2290,7 @@
                                                         class="wrapper !bg-[#ffffff]"
                                                       >
                                                         <div
-                                                          class="container py-[4.5rem] xl:!py-12 lg:!py-12 md:!py-12"
+                                                          class="py-[1.5rem]"
                                                         >
                                                           <div
                                                             class="itemgrid grid-view projects-masonry"
@@ -4340,9 +4340,7 @@
                                                     <section
                                                       class="wrapper !bg-[#ffffff]"
                                                     >
-                                                      <div
-                                                        class="container py-[4.5rem] xl:!py-12 lg:!py-12 md:!py-12"
-                                                      >
+                                                      <div class="py-[1.5rem]">
                                                         <div
                                                           class="itemgrid grid-view projects-masonry"
                                                         >
@@ -4959,15 +4957,8 @@
                                       class="panel-item mt-1 for-colours active"
                                     >
                                       <div class="row">
-                                        <div class="col-6">
-                                          <!-- <button
-                                          type="button"
-                                          id="prev-step"
-                                          onclick="previous()"
-                                          class="btn btn-light btn-back bordered"
-                                        >
-                                          PiecesSelection
-                                        </button> -->
+                                        <!-- <div class="col-6">
+                                         
                                           <a
                                             href="#"
                                             id="prev-step"
@@ -4991,9 +4982,38 @@
                                             "
                                             class="btn btn-gradient gradient-1 btn-next !rounded-[50rem] mr-1 mb-2 md:mb-0"
                                           >
-                                            Select option</a
+                                            Select option
+                                          </a>
+                                        </div> -->
+                                        <!-- Button with ID "button-text" -->
+                                        <div class="col-6">
+                                          <a
+                                            href="#"
+                                            id="prev-step"
+                                            style="
+                                              align-items: center;
+                                              display: grid;
+                                            "
+                                            onclick="previous()"
+                                            class="btn btn-outline-gradient gradient-1 !rounded-[50rem] mr-1 mb-2 md:mb-0"
+                                            ><span>Pieces Selection</span></a
                                           >
                                         </div>
+                                        <div class="col-6">
+                                          <a
+                                            href="#"
+                                            id="button-textNext"
+                                            onclick="next()"
+                                            style="
+                                              align-items: center;
+                                              display: grid;
+                                            "
+                                            class="btn btn-gradient gradient-1 btn-next !rounded-[50rem] mr-1 mb-2 md:mb-0"
+                                            >Select option</a
+                                          >
+                                        </div>
+
+                                        <!-- Button with ID "prev-step" -->
                                       </div>
                                     </div>
                                   </div>
@@ -5195,7 +5215,7 @@
           document
             .getElementById("Accessories_container")
             .classList.remove("d-none");
-
+          updateButtonText();
           // Get the image source of the selected item
           const imgSrc = selectedElement.parentElement.querySelector("img").src;
 
@@ -5273,13 +5293,15 @@
 
         // Check if there is any checked item
         var checkedItem = document.querySelector(".add-price input:checked");
-        var specificButton = document.getElementById("button-text"); // Replace "specific-button" with the actual ID of your button
+        var specificButton = document.getElementById("button-textNext"); // Replace "specific-button" with the actual ID of your button
 
         // Toggle the disabled attribute of the specific button based on the presence of a checked item
         if (!checkedItem) {
           specificButton.disabled = true;
+          document
+            .getElementById("button-textNext")
+            .setAttribute("disabled", "disabled");
         } else {
-          specificButton.disabled = false;
         }
         var selectedItems = [];
         selectedItems = getSelectedItems();
@@ -5431,13 +5453,14 @@
             var checkedItem = document.querySelector(
               ".add-price input:checked"
             );
-            var specificButton = document.getElementById("button-text"); // Replace "specific-button" with the actual ID of your button
+            var specificButton = document.getElementById("button-textNext"); // Replace "specific-button" with the actual ID of your button
 
             // Toggle the disabled attribute of the specific button based on the presence of a checked item
             if (!checkedItem) {
-              specificButton.disabled = true;
+              document
+                .getElementById("button-textNext")
+                .setAttribute("disabled", "disabled");
             } else {
-              specificButton.disabled = false;
             }
           }
           // Assuming you have 3 steps, adjust this number accordingly
@@ -5476,7 +5499,6 @@
               .getElementById("exterior_container")
               .classList.add("d-none");
             updateButtonText();
-
             showPanorama();
           } else {
             document
@@ -5531,7 +5553,7 @@
             updateButtonText();
           }
         }
-        var specificButton = document.getElementById("button-text"); // Replace "specific-button" with the actual ID of your button
+        var specificButton = document.getElementById("button-textNext"); // Replace "specific-button" with the actual ID of your button
         specificButton.disabled = false;
 
         if (activeButton == 3 || activeButton == 4) {
@@ -5540,43 +5562,49 @@
             .classList.remove("d-none");
           document.getElementById("exterior_container").classList.add("d-none");
           showPanorama();
+          updateButtonText();
         } else {
           document.getElementById("interior_container").classList.add("d-none");
           document
             .getElementById("exterior_container")
             .classList.remove("d-none");
+          updateButtonText();
         }
       }
 
       // Function to update button text based on activeButton
       function updateButtonText() {
+        const buttonText = document.getElementById("button-textNext");
         const buttonTextPrev = document.getElementById("prev-step");
-        const buttonText = document.getElementById("button-text");
         console.log("Button Text:", buttonText.innerText);
         console.log("Active Button:", activeButton);
+
         switch (activeButton) {
           case 1:
-            buttonText.innerText = "Select option";
-            buttonTextPrev.innerText = "Pieces Selection";
+            buttonText.innerText = "Option Color 1";
+            buttonTextPrev.querySelector("span").innerText =
+              "Pieces Selection 1";
             break;
           case 2:
-            buttonText.innerText = "Choose your accessories";
-            buttonTextPrev.innerText = "Pieces Selection";
-
+            buttonText.innerText = "Option Selection";
+            buttonTextPrev.querySelector("span").innerText =
+              "Pieces Selection ";
             break;
           case 3:
-            buttonText.innerText = "Choose your accessories";
-            buttonTextPrev.innerText = "Color Selection";
-
+            buttonText.innerText = "Accessories Selection";
+            buttonTextPrev.querySelector("span").innerText =
+              "Option Selection ";
             break;
           case 4:
-            buttonText.innerText = "Choose your accessories";
-            buttonTextPrev.innerText = "Color Selection";
-
+            buttonText.innerText = "Compelete Your Design";
+            buttonTextPrev.querySelector("span").innerText =
+              "Option Selection ";
             break;
+          // Add cases for other activeButton values as needed
           default:
-            buttonText.innerText = "Select option";
-            buttonTextPrev.innerText = "Pieces Selection";
+            buttonText.innerText = "Default Option";
+            buttonTextPrev.querySelector("span").innerText =
+              "Default Pieces Selection";
         }
       }
 
@@ -5700,6 +5728,37 @@
       // 3. Initialize a inputType and connect it
       axes.connect("angle", new eg.Axes.PanInput(".car_rotate"));
     </script>
+    <script>
+      // Function to handle filtering
+      function filterProjects(filterValue) {
+        // Get all project items
+        var projects = document.querySelectorAll(".project");
+
+        // Loop through each project item
+        projects.forEach(function (project) {
+          // Check if the project item has the specified filter value
+          if (project.classList.contains(filterValue)) {
+            // If yes, show the project item
+            project.style.display = "block";
+          } else {
+            // If not, hide the project item
+            project.style.display = "none";
+          }
+        });
+      }
+
+      var filterLinks = document.querySelectorAll(".filter-item");
+      filterLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          // Get the filter value from the data-filter attribute
+          var filterValue = this.getAttribute("data-filter");
+          filterValue = filterValue.replace(".", "");
+          // Call the filterProjects function with the selected filter value
+          filterProjects(filterValue);
+        });
+      });
+    </script>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
