@@ -3380,37 +3380,11 @@
   outline-offset: 0;
 }
 
-.configuration
-  #menu_content_choose_trim
-  .trim-filter-option
-  .btn-check:active
-  + .btn,
-.configuration
-  #menu_content_choose_trim
-  .trim-filter-option
-  .btn-check:checked
-  + .btn,
-.configuration #menu_content_choose_trim .trim-filter-option .btn.active,
-.configuration #menu_content_choose_trim .trim-filter-option .btn:active,
-.configuration
-  #offcanvas_filter_trims
-  .trim-filter-option
-  .btn-check:active
-  + .btn,
-.configuration
-  #offcanvas_filter_trims
-  .trim-filter-option
-  .btn-check:checked
-  + .btn,
-.configuration #offcanvas_filter_trims .trim-filter-option .btn.active,
-.configuration #offcanvas_filter_trims .trim-filter-option .btn:active {
-  /* background-image: linear-gradient(90deg, #410000 10%, #ff0000 100%);
-  border-color: #05141f;
-  color: #fff; */
-  background-color: #05141f7d;
-  box-shadow: 0px 15px 20px #0000004d;
+.configuration #menu_content_choose_trim .trim-filter-option .btn-check:active + .btn, .configuration #menu_content_choose_trim .trim-filter-option .btn-check:checked + .btn, .configuration #menu_content_choose_trim .trim-filter-option .btn.active, .configuration #menu_content_choose_trim .trim-filter-option .btn:active, .configuration #offcanvas_filter_trims .trim-filter-option .btn-check:active + .btn, .configuration #offcanvas_filter_trims .trim-filter-option .btn-check:checked + .btn, .configuration #offcanvas_filter_trims .trim-filter-option .btn.active, .configuration #offcanvas_filter_trims .trim-filter-option .btn:active {
+  background-color: #f70000;
+  /* box-shadow: 0px 15px 20px #0000004d; */
   color: #fff;
-  transform: translateY(-7px);
+  /* transform: translateY(-2px); */
 }
 
 @media screen and (max-width: 1024px) {
@@ -3440,6 +3414,8 @@
     justify-content: space-between;
     padding: 1pc;
   }
+
+  
 
   .configuration #menu_content_choose_trim .action-area .btn-area,
   .configuration #offcanvas_filter_trims .action-area .btn-area {
@@ -5109,15 +5085,15 @@
     /* border-color: #976cff; */
     transform: scale(0.95);
   }
-.configuration .trims-container .form-check-input:checked + .trim-filter-label {
-     /* border: 2px solid #ff0000; */
+  .configuration .trims-container .form-check-input:checked + .trim-filter-label {
+    /* border: 2px solid #ff0000; */
     /* border-radius: 6px; */
     /* -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
     /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
-    box-shadow: 0px 0px 17px -4px #7e7272;
+    box-shadow: 0px 0px 17px -4px #ea0000;
     /* border-color: #ea0029; */
     color: #f7f5ff;
-    background-color: #00000070;
+    background-color: #cf0001;
 }
 
 @media screen and (max-width: 1024px) {
@@ -5163,7 +5139,7 @@
 }
 
 .configuration .trims-container .trim-filter-label .options_name strong {
-  color: #05141f;
+  /* color: #05141f; */
   display: inline;
   font-size: 1pc;
   line-height: 1.75;
@@ -5173,11 +5149,11 @@
 }
 
 .configuration .trims-container .trim-filter-label .price {
-  color: #be0000;
+  /* color: #be0000; */
   display: block;
   font-family: Kia Signature Bold, Arial, sans-serif, Hevetica;
-  font-size: 18px;
-  padding-top: 6px;
+  /* font-size: 18px; */
+  /* padding-top: 6px; */
   text-align: left;
 }
 
@@ -9722,9 +9698,9 @@ th {
 }
 
 .price {
-  color: #697278;
+  /* color: #697278; */
   font-family: Kia Signature Bold, Arial, sans-serif, Hevetica;
-  font-size: 1pc;
+  /* font-size: 1pc; */
 }
 
 .price .unit {

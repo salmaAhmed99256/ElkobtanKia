@@ -11566,14 +11566,11 @@ textarea {
 }
 
 .btn:not(.btn-link):hover {
-  --tw-translate-y: -0.15rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-shadow: 0 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
-  --tw-shadow-colored: 0 0.25rem 0.75rem var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  /* --tw-translate-y: -0.15rem; */
+  /* transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); */
+  /* --tw-shadow: 0 0.25rem 0.75rem rgba(30, 34, 40, 0.15); */
+  /* --tw-shadow-colored: 0 0.25rem 0.75rem var(--tw-shadow-color); */
+  /* box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
 }
 .btn:not(.btn-link).btn-outline-gradient:hover {
   --tw-translate-y: -0.15rem;
@@ -37439,7 +37436,7 @@ button.primary:hover {
 }
 
 .radio-input input[type="radio"]:checked + label {
-  background: #00000070;
+  background: #cf0001;
   color: #fff !important;
   /* border-color: rgb(129, 235, 129); */
   animation: radio-translate 0.5s ease-in-out;
